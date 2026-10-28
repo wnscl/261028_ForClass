@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HWPX Viewer</title>
+<title>HWPX & DOCX Viewer</title>
 <style>
   body { margin: 0; font-family: "Malgun Gothic", "Noto Sans KR", sans-serif; background: #e9ecef; color: #222; }
   header { background: #1f2a44; color: #fff; padding: 14px 24px; }
@@ -26,12 +26,12 @@
 <header><h1>HWPX Viewer <small>- 오픈소스 소프트웨어 실습</small></h1></header>
 <main>
   <div id="drop">
-    <p>.hwpx 파일을 여기로 끌어다 놓거나 선택하세요</p>
-    <input type="file" id="file" accept=".hwpx">
+    <p>.hwpx 또는 .docx 파일을 여기로 끌어다 놓거나 선택하세요</p>
+    <input type="file" id="file" accept=".hwpx,.docx">
   </div>
   <div id="status"></div>
   <details id="structure" hidden>
-    <summary>HWPX 내부 구조 (ZIP 엔트리)</summary>
+    <summary>문서 내부 구조 (ZIP 엔트리)</summary>
     <pre id="tree"></pre>
   </details>
   <div id="viewer"></div>
